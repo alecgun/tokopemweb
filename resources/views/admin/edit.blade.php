@@ -25,7 +25,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="image" class="form-label">Ganti Foto Profil</label>
-                    <input class="form-control" type="file" id="image" name="image">
+                    <input class="form-control" type="file" id="image" name="image" value="{{$barang->image}}">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
