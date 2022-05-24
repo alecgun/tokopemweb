@@ -21,7 +21,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="keterangan" class="form-label">Keterangan</label>
-                    <textarea name="keterangan" class="form-control" id="keterangan" rows="2" value="{{$barang->keterangan}}"></textarea>
+                    <textarea name="keterangan" class="form-control" id="keterangan" rows="2">{{$barang->keterangan}}</textarea>
                 </div>
                 <div class="mb-3">
                     <label for="image" class="form-label">Ganti Foto Profil</label>
