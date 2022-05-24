@@ -1,0 +1,12 @@
+Untuk menggunakan code ini, berikut caranya:
+  1. Tekan tombol dropdown Code warna hijau,  copy link yang ada di HTTPS
+  2. buka folder xampp/htdocs,
+  3. jika sudah install Git, klik kanan dan git bash, ketik 'git clone 'linkrepository''
+  4. Buka cmd di folder repository yang diclone tadi, ketik 'composer install'
+  5. Run cp .env.example .env
+  6. Run php artisan key:generate
+  7. ubah di file .env yang database diubah ke databasemu
+  8. Run php artisan migrate
+  9. Run php artisan db:seed --class=RolesSeeder
+  10. Run php artisan serve
+  11. Go to link localhost:8000
