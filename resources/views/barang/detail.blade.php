@@ -20,7 +20,7 @@
                         </div>
                         <div class="col-md-6 mt-5">
                             <h2>{{ $barang->nama_barang }}</h2>
-                            <table class="table">
+                            <table class="table table-borderless">
                                 <tbody>
                                     <tr>
                                         <td>Harga</td>
