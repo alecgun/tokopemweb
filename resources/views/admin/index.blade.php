@@ -6,6 +6,7 @@
             <table class="table table-hover table-bordered">
                 <thead align="center">
                     <tr>
+                        <th></th>
                         <th>Nama Barang</th>
                         <th>Harga</th>
                         <th>Stok</th>
@@ -16,6 +17,7 @@
                 <tbody align="center">
                     @foreach($barangs as $barang)
                     <tr>
+                        <td><img src="{{ asset('storage/uploads/'.$barang->image)}}" width="75px" height="50px" alt="{{ $barang->nama_barang }}"></td>
                         <td>{{$barang->nama_barang}}</td>
                         <td>{{$barang->harga}}</td>
                         <td>{{$barang->stok}}</td>

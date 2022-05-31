@@ -14,7 +14,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
     <!-- Styles -->
@@ -77,9 +77,7 @@
                                     </form>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/alecgun/tokopemweb" target="_blank"><i class="bi bi-github fa-lg"></i></a>
-                            </li>
+                            
                         @endguest
                     </ul>
                 </div>
@@ -89,6 +87,37 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <footer class="text-center bg-dark text-white fixed-bottom">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Social media -->
+            <section class="mb-1 mt-1">
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating text-white m-1" href="#!" role="button"
+                ><i class="bi bi-instagram"></i
+            ></a>
+            <!-- Github -->
+            <a
+                class="btn btn-link btn-floating text-white m-1"
+                href="https://github.com/alecgun/tokopemweb"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                >
+                <i class="bi bi-github"></i>
+            </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright: Risoles Ko Acong
+        </div>
+        <!-- Copyright -->
+        </footer>
     </div>
     @include('sweetalert::alert')
 </body>
