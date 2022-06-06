@@ -25,16 +25,6 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         $barangs = Barang::all();
-        if ($request->user()->hasRole('user')) {
-            return redirect('home');
-        }
-
-        else if ($request->user()->hasRole('admin')){
-            return redirect('dashboard');
-        }
-
-        else {
-            return redirect('/');
-        }
+        return view('welcome');
     }
 }

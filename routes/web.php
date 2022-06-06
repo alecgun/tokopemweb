@@ -19,10 +19,10 @@ use App\Http\Controllers\BarangController;
 |
 */
 
-Route::get('/',[HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
+Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/home', [UserController::class, 'index'])->name('home');
 Route::get('/dashboard', [AdminController::class, 'index'])->name('home');
 Route::get('pesan/{id}',[PesanController::class,'index']);
